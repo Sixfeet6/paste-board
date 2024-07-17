@@ -1,1 +1,4 @@
-jdjebnndkij
+1，cloudflare绑定私有仓库
+2，hexo部署到私有仓库
+3，actions自动合并分支（功能页）
+4，功能页依赖仓库在另一个号
