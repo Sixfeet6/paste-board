@@ -1,3 +1,5 @@
+
+ 保存
 https://www.everythingtrackandfield.com/triple-jump-technique-and-training
 
 https://m.book118.com/html/2024/0422/8066053051006061.shtm
@@ -18,3 +20,6 @@ https://pan.xunlei.com/s/VO0-iJ4XdNL42asWeZzNxcLZA1?pwd=yjfa
 https://pan.quark.cn/s/02c1f8068c30
 
 帮我做一个计时器网页，功能如下：页面顶部有菜单栏，菜单栏里有“添加任务”选项卡，它被点击后唤起添加任务的小窗口，在小窗口中，用户可以添加一个新任务并设置它的初始剩余时间（以时，分为单位）。菜单栏以下的页面部分显示所有的任务（用网格视图，顺序同创建顺序），每个任务上都有“开始”和“结束”两个按钮。对于每一个任务，当用户点击开始按钮，该任务进入倒计时（它的初始剩余时间如前所述，由用户设置），为确保始终有且只有一个任务处于倒计时状态，当用户开始计时某个任务时，原先正在计时的任务自动停止计时（剩余时间减少后不恢复），当用户停止及时某个任务时（停止的任务的剩余时间减少后不恢复），则自动按照任务的顺序依次对任务计时。当某任务完成计时，自动删除该任务，并按照顺序对剩余的任务计时。
+复制并删除
+
+https://www.terabox.app/chinese/sharing/link?surl=jsU-U_wmv25OeKYf-TGwjw
