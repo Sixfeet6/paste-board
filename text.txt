@@ -1,3 +1,88 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# 设置Chrome选项
+chrome_options = Options()
+chrome_options.add_argument("--headless")  # 无头模式，不打开浏览器窗口
+
+# 初始化WebDriver
+service = Service('path/to/chromedriver')  # 替换为你的chromedriver路径
+driver = webdriver.Chrome(service=service, options=chrome_options)
+
+try:
+    # 打开登录页面
+    driver.get('https://www.zukongguan.com/login')
+
+    # 输入用户名和密码
+    username = driver.find_element(By.NAME, 'username')  # 替换为实际的用户名输入框的name属性
+    password = driver.find_element(By.NAME, 'password')  # 替换为实际的密码输入框的name属性
+    username.send_keys('your_username')  # 替换为你的用户名
+    password.send_keys('your_password')  # 替换为你的密码
+    password.send_keys(Keys.RETURN)
+
+    # 等待页面加载并找到签到按钮
+    wait = WebDriverWait(driver, 10)
+    sign_in_button = wait.until(EC.element_to_be_clickable((By.ID, 'sign_in_button_id')))  # 替换为实际的签到按钮的ID
+
+    # 点击签到按钮
+    sign_in_button.click()
+
+    print("签到成功！")
+
+finally:
+    # 关闭浏览器
+    driver.quit()
+
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# 设置Chrome选项
+chrome_options = Options()
+chrome_options.add_argument("--headless")  # 无头模式，不打开浏览器窗口
+
+# 初始化WebDriver
+service = Service('path/to/chromedriver')  # 替换为你的chromedriver路径
+driver = webdriver.Chrome(service=service, options=chrome_options)
+
+try:
+    # 打开登录页面
+    driver.get('https://www.zukongguan.com/login')
+
+    # 输入用户名和密码
+    username = driver.find_element(By.NAME, 'username')  # 替换为实际的用户名输入框的name属性
+    password = driver.find_element(By.NAME, 'password')  # 替换为实际的密码输入框的name属性
+    username.send_keys('your_username')  # 替换为你的用户名
+    password.send_keys('your_password')  # 替换为你的密码
+    password.send_keys(Keys.RETURN)
+
+    # 等待页面加载并找到签到按钮
+    wait = WebDriverWait(driver, 10)
+    sign_in_button = wait.until(EC.element_to_be_clickable((By.ID, 'sign_in_button_id')))  # 替换为实际的签到按钮的ID
+
+    # 点击签到按钮
+    sign_in_button.click()
+
+    print("签到成功！")
+
+finally:
+    # 关闭浏览器
+    driver.quit()
+
+
+
+
+ 保存
 https://mobileappcommunicator.auth.microsoft.com/activate/027481207/KRS
 
 
@@ -26,3 +111,5 @@ https://pan.quark.cn/s/02c1f8068c30
 复制并删除
 
 https://www.terabox.app/chinese/sharing/link?surl=jsU-U_wmv25OeKYf-TGwjw
+复制并删除
+
