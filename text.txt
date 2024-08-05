@@ -1,3 +1,38 @@
+
+你可以通过以下步骤在Windows系统中设置Python脚本开机自启动：
+
+1. **创建一个批处理文件（.bat）**：
+   - 打开记事本，输入以下内容：
+     ```batch
+     @echo off
+     python "你的脚本路径\script.py"
+     pause
+     ```
+   - 将文件另存为 `start.bat`，确保文件类型选择为“所有文件”。
+
+2. **将批处理文件放入启动文件夹**：
+   - 按 `Win + R` 打开运行窗口，输入 `shell:startup` 并按回车。
+   - 将 `start.bat` 文件复制到打开的启动文件夹中。
+
+3. **设置任务计划程序（可选）**：
+   - 按 `Win + X`，选择“计算机管理”。
+   - 在左侧导航栏中选择“任务计划程序”。
+   - 点击右侧的“创建基本任务”，按照向导设置任务名称、触发器（如每天开机时）、操作（启动程序），并选择你的 `start.bat` 文件。
+
+这样，每次开机时，Windows都会自动运行你的Python脚本¹²。
+
+如果你有任何问题或需要进一步的帮助，请告诉我！😊
+
+¹: https://blog.csdn.net/qq_41699621/article/details/110630446
+²: https://blog.csdn.net/weixin_43538006/article/details/130441663
+
+源: 与 Copilot 的对话， 2024/8/5
+(1) 将Python脚本加入开机启动项(WIN10、CentOS) - CSDN博客. https://blog.csdn.net/qq_41699621/article/details/110630446.
+(2) WIN10中使python程序开机自启动的2个方法 - CSDN博客. https://blog.csdn.net/weixin_43538006/article/details/130441663.
+(3) 将Python脚本加入开机启动项(WIN10、CentOS) - CSDN博客. https://bing.com/search?q=%e5%a6%82%e4%bd%95%e5%9c%a8Windows%e8%ae%be%e7%bd%ae%e8%87%aa%e5%90%af%e5%8a%a8%e7%a8%8b%e5%ba%8f%e8%bf%90%e8%a1%8cPython%e8%84%9a%e6%9c%ac.
+(4) Windows 系统如何定时运行 Python 程序或脚本_windows .... https://blog.csdn.net/qq_44214671/article/details/113834079.
+(5) window开机自动运行python脚本 - CSDN博客. https://blog.csdn.net/HHYZBC/article/details/127821769.
+ 保存
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -113,3 +148,4 @@ https://pan.quark.cn/s/02c1f8068c30
 https://www.terabox.app/chinese/sharing/link?surl=jsU-U_wmv25OeKYf-TGwjw
 复制并删除
 
+复制并删除
