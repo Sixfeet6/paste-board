@@ -1,2 +1,1 @@
-vless://1406dabe-ec31-4f99-a7d4-e20197576983@162.159.128.218:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=sitson.lzhijiao6.workers.dev&type=ws#sitson.lzhijiao6.workers.dev
-vless://80983ac9-d204-44d0-829b-a1b05209d0c6@172.67.195.60:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=proxy.sitsonhuang.workers.dev&type=ws#proxy.sitsonhuang.workers.dev
+https://mp.weixin.qq.com/s?__biz=MzI0NTE4ODgzNg==&mid=2651962603&idx=1&sn=61ad18b5ca4cd91dddbbaa7c847f9cf8&chksm=f2b74d60c5c0c4761b989541812e78571ad7a44884549e13f6aff7e6f1a31f76566cee79a3e4&scene=27
