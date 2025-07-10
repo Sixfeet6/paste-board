@@ -1,10 +1,2 @@
-172.67.54.49      4       4       0.00    158.52    15.79           FRA
-104.19.142.87     4       4       0.00    160.68    7.64            LAX
-104.19.134.251    4       4       0.00    159.90    7.29            LAX
-162.159.44.18     4       4       0.00    157.25    4.15            LAX
-162.159.39.207    4       4       0.00    153.56    3.31            LAX
-162.159.195.98    4       4       0.00    161.10    2.80            LAX
-104.19.252.133    4       4       0.00    159.46    2.20            LAX
-104.16.120.9      4       4       0.00    157.85    1.69            LAX
-104.19.248.208    4       4       0.00    153.60    1.26            LAX
-172.65.169.223    4       4       0.00    161.47    0.00            N/A
+vless://1406dabe-ec31-4f99-a7d4-e20197576983@162.159.128.218:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=sitson.lzhijiao6.workers.dev&type=ws#sitson.lzhijiao6.workers.dev
+vless://80983ac9-d204-44d0-829b-a1b05209d0c6@172.67.195.60:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=proxy.sitsonhuang.workers.dev&type=ws#proxy.sitsonhuang.workers.dev
