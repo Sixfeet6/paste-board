@@ -1,3 +1,11 @@
-https://bulianglin.com/archives/nicename.html
-vless://1406dabe-ec31-4f99-a7d4-e20197576983@162.159.128.218:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=sitson.lzhijiao6.workers.dev&type=ws#sitson.lzhijiao6.workers.dev
-vless://80983ac9-d204-44d0-829b-a1b05209d0c6@172.67.195.60:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=proxy.sitsonhuang.workers.dev&type=ws#proxy.sitsonhuang.workers.dev
+
+http://127.0.0.1:2095/app/
+        Username:        V01m6qQV
+        Password:        Birkb1Uv
+
+cdn-dynmedia-1.microsoft.com
+static.cloud.coveo.com
+
+
+vless://a5e872dd-8d1d-4d89-83ac-ac1e13d38912@8.208.27.141:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=static.cloud.coveo.com&fp=firefox&pbk=HerZfkes2tFtduXTu7Ybx2aBjxVm_xoiDU4E-kMWpxw&type=tcp&headerType=none#vless-reality
+tuic://a5e872dd-8d1d-4d89-83ac-ac1e13d38912%3ACYLXXTnmNx@8.208.27.141:443?sni=static.cloud.coveo.com&alpn=h3%2Ch2%2Chttp%2F1.1&congestion_control=bbr#tuic-443
