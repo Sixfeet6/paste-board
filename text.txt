@@ -34,3 +34,17 @@ int main(void)
 
     return 0;
 }
+
+
+
+http://127.0.0.1:2095/app/
+        Username:        V01m6qQV
+        Password:        Birkb1Uv
+
+cdn-dynmedia-1.microsoft.com
+static.cloud.coveo.com
+
+
+vless://a5e872dd-8d1d-4d89-83ac-ac1e13d38912@8.208.27.141:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=static.cloud.coveo.com&fp=firefox&pbk=HerZfkes2tFtduXTu7Ybx2aBjxVm_xoiDU4E-kMWpxw&type=tcp&headerType=none#vless-reality
+tuic://a5e872dd-8d1d-4d89-83ac-ac1e13d38912%3ACYLXXTnmNx@8.208.27.141:443?sni=static.cloud.coveo.com&alpn=h3%2Ch2%2Chttp%2F1.1&congestion_control=bbr#tuic-443
+复制并删除
