@@ -1,11 +1,36 @@
+# include <stdio.h>
 
-http://127.0.0.1:2095/app/
-        Username:        V01m6qQV
-        Password:        Birkb1Uv
+#define COLS 4
+#define ROWS 3
 
-cdn-dynmedia-1.microsoft.com
-static.cloud.coveo.com
+void printf_int(int i){printf("%d", i);}
+
+double f (double x)
+{
+    return pow(x,pow(x,x));
+}
+
+void printf_double(double d){printf("%f",d);}
+
+double dmax(double x,double y)
+{
+    return (x>y ? x:y);
+}
+
+double sign (double x)
+{
+    return x>0 ? 1.0:(x==0 ? 0:-1.0);
+}
+
+int main(void)
+{
+
+    /*double r;
+    scanf("%lf",& r);
+    printf("r*r=%lf",r*r);
+    */
+    printf("%lf", ((f(2.001)-f(2.0))/0.001));
 
 
-vless://a5e872dd-8d1d-4d89-83ac-ac1e13d38912@8.208.27.141:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=static.cloud.coveo.com&fp=firefox&pbk=HerZfkes2tFtduXTu7Ybx2aBjxVm_xoiDU4E-kMWpxw&type=tcp&headerType=none#vless-reality
-tuic://a5e872dd-8d1d-4d89-83ac-ac1e13d38912%3ACYLXXTnmNx@8.208.27.141:443?sni=static.cloud.coveo.com&alpn=h3%2Ch2%2Chttp%2F1.1&congestion_control=bbr#tuic-443
+    return 0;
+}
