@@ -1,1 +1,65 @@
-W
+import asyncio
+import re
+from playwright.async_api import async_playwright
+
+async def check_activity_spots(url):
+    """
+    Checks the number of registered participants against the maximum capacity
+    from the given webpage URL using Playwright to handle dynamic content.
+    """
+    async with async_playwright() as p:
+        # 启动一个无头浏览器实例
+        browser = await p.chromium.launch()
+        page = await browser.new_page()
+        
+        print(f"Navigating to {url}...")
+        try:
+            # 1. 导航到 URL 并等待页面内容加载
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            
+            # 2. 等待包含“已报人数”的元素出现
+            await page.wait_for_selector("text=已报人数", timeout=15000)
+            
+            # 3. 获取完整的页面内容
+            html_content = await page.content()
+            
+            # 4. 定义正则表达式模式来查找 "已报人数：X/Y"
+            pattern = r"已报人数：(\d+)/(\d+)"
+            
+            # 5. 在内容中搜索模式
+            match = re.search(pattern, html_content)
+            
+            if match:
+                # 6. 提取两个数字 (X 和 Y)
+                registered = int(match.group(1))
+                maximum = int(match.group(2))
+                
+                print(f"\n活动链接: {url}")
+                print(f"已报人数 (Registered): {registered}")
+                print(f"最大人数 (Maximum Capacity): {maximum}")
+                
+                # 7. 比较 X 和 Y
+                if registered < maximum:
+                    available_spots = maximum - registered
+                    print(f"\n✅ 还有名额！(Spots are available!)")
+                    print(f"剩余名额 (Remaining Spots): {available_spots}")
+                    return True
+                else:
+                    print(f"\n❌ 名额已满。(Spots are full.)")
+                    return False
+            else:
+                print("\n未能找到 '已报人数：X/Y' 格式的信息。请检查网页结构是否发生变化。")
+                return None
+
+        except Exception as e:
+            print(f"An error occurred during page interaction: {e}")
+            return None
+        finally:
+            await browser.close()
+
+# 您提供的活动链接
+activity_url = "https://apph5.5idream.net/share/activity?share=15384DF35EFB8E8FAA7E6758487AF594"
+
+if __name__ == "__main__":
+    # 运行异步函数
+    asyncio.run(check_activity_spots(activity_url ))
