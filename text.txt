@@ -1,1 +1,11 @@
-pan.quark.cn/s/b2204d9d7970
+user.name=Sixfeet6
+user.email=lzhijiao6@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:sixfeet6/hexo.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+pull.rebase=false
